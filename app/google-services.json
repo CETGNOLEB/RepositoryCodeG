@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "641238389372",
+    "firebase_url": "https://gustus-delivery.firebaseio.com",
+    "project_id": "gustus-delivery",
+    "storage_bucket": "gustus-delivery.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:641238389372:android:f942193275a71e4b",
+        "android_client_info": {
+          "package_name": "br.com.belongapps.gustusdelivery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "641238389372-p5ir996hj647didg0ts8mggu17sc1kl0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.belongapps.gustusdelivery",
+            "certificate_hash": "57970911b0e126044d8ceb40d4c55bcdfaae6e70"
+          }
+        },
+        {
+          "client_id": "641238389372-38bsei28q30vp0mdmqphkps6feh0asre.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCi7_x4hyUnx7KZPiCeDKCU1yNbVk4EsA0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "641238389372-38bsei28q30vp0mdmqphkps6feh0asre.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

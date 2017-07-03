@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_escolher_recheio"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="?actionBarSize"
+    tools:context=".cardapioOnline.activitys.CarrinhoActivity"
+    tools:showIn="@layout/activity_carrinho">
+
+    <ProgressBar
+        android:id="@+id/progressbar_escolher_adicionais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/itens_carrinho"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_above="@+id/detalhe_cart"
+        android:scrollbars="vertical">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <ImageView
+        android:id="@+id/img_carrinho_vazio"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/emptycart"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/text_carrinho_vazio"
+        android:layout_below="@+id/img_carrinho_vazio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="Carrinho Vazio"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/desc_carrinho_vazio"
+        android:layout_below="@+id/text_carrinho_vazio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:text="Que tal escolher algo pra comer ?"
+        android:visibility="invisible"/>
+
+    <RelativeLayout
+        android:id="@+id/detalhe_cart"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#e0dede"
+        android:layout_above="@+id/buttons"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/text_qtd_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="1 Item"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text_total_carrinho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text="R$ 50,00"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary">
+
+        <Button
+            android:id="@+id/bt_realizar_pedido"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:drawableRight="@drawable/icon_right"
+            android:text="FINALIZAR"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/bt_continuar_comprando"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/bt_proximo_recheios"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/icon_left"
+            android:text=" + Produtos"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>

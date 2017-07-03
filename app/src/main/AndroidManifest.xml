@@ -1,0 +1,49 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.belongapps.gustusdelivery">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/launch_icon_gustus"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".seguranca.activities.LoginActivity"
+            android:theme="@style/Base.LoginTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        //Módulo Cardapio Online
+        <activity android:name=".cardapioOnline.activitys.CardapioMainActivity">
+
+            <!--<intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+        <activity android:name=".cardapioOnline.activitys.DetalhesdoItemActivity" />
+        <activity android:name=".cardapioOnline.activitys.CarrinhoActivity" />
+        <activity android:name=".cardapioOnline.activitys.FinalizarPedidoActivity" />
+        <activity android:name=".cardapioOnline.activitys.FinalizarPedidoRetiradaActivity" />
+
+        //Módulo Sobre/Ajuda
+        <activity android:name=".helpAbout.activities.SobreActivity" />
+        <activity android:name=".helpAbout.activities.AjudaActivity" />
+
+        //Módulo gerencial do cliente
+        <activity android:name=".gerencial.activities.EnderecosActivity" />
+
+        //Módulo Banner Promocionais
+        <activity android:name=".promocoes.activities.TelaInicialActivity"></activity>
+
+        //Módulo Pós Pedido
+        <activity android:name=".posPedido.activities.MeusPedidosActivity" />
+        <activity android:name=".posPedido.activities.AcompanharPedidoActivity" />
+
+    </application>
+
+</manifest>

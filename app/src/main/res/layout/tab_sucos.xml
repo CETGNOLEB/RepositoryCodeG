@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cardapioOnline.activitys.CardapioMainActivity">
+
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:progressTint="@color/colorPrimary"
+        android:theme="@style/MyProgressbarColor"
+        android:id="@+id/progressbar_escolher_suco" />
+
+    <TextView
+        android:id="@+id/textTabSucos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Escolha o seu"
+        android:textSize="17sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/textTabSucos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_sucos">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

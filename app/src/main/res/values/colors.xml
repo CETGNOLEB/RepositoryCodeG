@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--PRINCIPAIS-->
+    <color name="colorPrimary">#FBCA01</color>
+    <color name="colorPrimaryDark">#f7c500</color>
+   <!-- #C91200
+    <color name="colorAccent">#424242</color>-->
+    <color name="colorAccent">#CB1007</color>
+    <color name="textColorPrimary">#424242</color>
+
+    <!--TOOLBAR-->
+    <color name="textColorToolbar">#FFFFFF</color>
+
+    <!--TABS-->
+    <color name="textColorTabs">#FFFFFF</color>
+    <color name="tabIndication">@color/colorAccent</color>
+
+    <!--DIALOGS-->
+    <color name="dialogBackground">#616161</color>
+
+    <!--LOGIN-->
+    <color name="loginBackground">@color/colorPrimary</color>
+
+    <!--CARDS-->
+    <color name="colorPrecosProdutos">#FFA50E</color>
+
+</resources>
